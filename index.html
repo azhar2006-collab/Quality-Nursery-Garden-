@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Nursery Garden — Best Garden Shop in Chennai | Plants, Seeds, Fertilizers & Nursery</title>
+    <meta name="description" content="Buy premium gardening products online from Quality Nursery Garden, Chennai's trusted nursery. Live plants, seeds, grow bags, vermicompost, cocopeat & potting mix with doorstep delivery.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===================== ANNOUNCEMENT TOP BAR ===================== -->
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__left">
+                <span class="topbar__badge">🌿 CHENNAI STORE</span>
+                <span class="topbar__text">Free Home Delivery in Chennai on orders above ₹999!</span>
+            </div>
+            <div class="topbar__right">
+                <a href="tel:+919962545455" class="topbar__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call: +91 99625 45455
+                </a>
+                <span class="topbar__sep">|</span>
+                <a href="#shop" class="topbar__link">Plant Collection</a>
+                <span class="topbar__sep">|</span>
+                <a href="#branches" class="topbar__link">Stores: Medavakkam & Vengaivasal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== MAIN HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <!-- Brand Logo -->
+            <a href="#" class="logo" aria-label="Quality Nursery Garden Home">
+                <div class="logo__info">
+                    <span class="logo__name">Quality Nursery Garden</span>
+                    <span class="logo__tagline">PREMIUM NURSERY & GARDEN STORE</span>
+                </div>
+            </a>
+
+            <!-- Pincode Delivery Pill -->
+            <button class="delivery-pill" onclick="openPincodeModal()" aria-label="Select delivery location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div class="delivery-pill__text">
+                    <span class="delivery-pill__label">Deliver to</span>
+                    <strong class="delivery-pill__city" id="currentLocation">Chennai 600100</strong>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <svg class="search-box__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" 
+                       id="searchInput" 
+                       class="search-box__input" 
+                       placeholder="Search live plants, combo offers, seeds, fertilizers, grow bags..." 
+                       aria-label="Search nursery products">
+                <button class="search-box__clear" id="searchClear" aria-label="Clear search" style="display:none;">✕</button>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header__actions">
+                <!-- WhatsApp Chat Button -->
+                <a href="https://wa.me/919962545455?text=Hello%20Quality%20Nursery%20Garden,%20I%20want%20to%20order%20plants" 
+                   target="_blank" 
+                   class="header-btn header-btn--wa" 
+                   title="Chat on WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
+
+                <!-- Wishlist Button -->
+                <button class="header-btn" onclick="openWishlistModal()" title="View Wishlist" aria-label="Wishlist">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    <span class="header-btn__badge" id="wishlistBadge">0</span>
+                </button>
+
+                <!-- Shopping Cart -->
+                <button class="cart-trigger" id="cartToggle" onclick="toggleCartDrawer()" aria-label="View Shopping Cart">
+                    <div class="cart-trigger__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        <span class="cart-trigger__badge" id="cartBadge">0</span>
+                    </div>
+                    <div class="cart-trigger__text">
+                        <span class="cart-trigger__sub">Cart Total</span>
+                        <strong class="cart-trigger__total" id="cartHeaderTotal">₹0</strong>
+                    </div>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" id="menuToggle" onclick="toggleCategoryDrawer()" aria-label="Toggle Navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ===================== NAVIGATION CATEGORY BAR ===================== -->
+        <nav class="cat-nav" id="catNav">
+            <div class="container cat-nav__inner">
+                <button class="cat-nav__all-btn" onclick="toggleCategoryDrawer()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <span>All Categories</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+
+                <ul class="cat-nav__list">
+                    <li><a href="#shop" class="cat-nav__link active" onclick="setCategoryFilter('all')">All Products</a></li>
+                    <li><a href="#shop" class="cat-nav__link hot" onclick="setCategoryFilter('combo')">🔥 Combo Offers</a></li>
+                    <li><a href="#shop" class="cat-nav__link" onclick="setCategoryFilter('plants')">Live Plants</a></li>
+                    <li><a href="#shop" class="cat-nav__link" onclick="setCategoryFilter('flowering')">Flowering Plants</a></li>
+                    <li><a href="#shop" class="cat-nav__link" onclick="setCategoryFilter('herbal')">Herbal & Medicinal</a></li>
+                    <li><a href="#shop" class="cat-nav__link" onclick="setCategoryFilter('fertilizer')">Organic Fertilizers</a></li>
+                    <li><a href="#shop" class="cat-nav__link" onclick="setCategoryFilter('seeds')">Seeds & Greens</a></li>
+                    <li><a href="#coupons" class="cat-nav__link">Special Offers</a></li>
+                    <li><a href="#branches" class="cat-nav__link">Our Stores</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===================== HERO CAROUSEL ===================== -->
+    <section class="hero-slider">
+        <div class="slider-track" id="heroTrack">
+            <!-- Slide 1: Combo Deals -->
+            <div class="slide slide--active" style="background: linear-gradient(135deg, #0b4f2c 0%, #157341 60%, #1f8b50 100%);">
+                <div class="container slide__inner">
+                    <div class="slide__content">
+                        <span class="slide__pill">💥 MEGA SAVER COMBO OFFERS</span>
+                        <h1 class="slide__title">Buy 1 Get 1 Free <br><em>Live Plants & Herbs</em></h1>
+                        <p class="slide__desc">Transform your home & garden with authentic Chennai nursery grown plants, fresh culinary herbs, and flowering combos at wholesale direct prices from Quality Nursery Garden.</p>
+                        <div class="slide__actions">
+                            <a href="#shop" class="btn btn--gold btn--lg" onclick="setCategoryFilter('combo')">Shop Combos Now →</a>
+                            <a href="#coupons" class="btn btn--outline-white btn--lg">View Offers & Codes</a>
+                        </div>
+                        <div class="slide__perks">
+                            <span>✔ Doorstep Delivery in Chennai</span>
+                            <span>✔ Healthy Plant Replacement</span>
+                            <span>✔ Direct Nursery Prices</span>
+                        </div>
+                    </div>
+                    <div class="slide__visual">
+                        <img src="https://dukaan.b-cdn.net/700x700/webp/media/a8005217-440f-4099-9c77-3996333d6054.webp" 
+                             alt="3 Low Maintenance Indoor Plants Combo" 
+                             class="slide__img">
+                        <div class="slide__float-tag">
+                            <span class="slide__float-off">Up to 48% OFF</span>
+                            <span class="slide__float-sub">Top 3 Plant Combos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Air Purifiers & Living Greenery -->
+            <div class="slide" style="background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);">
+                <div class="container slide__inner">
+                    <div class="slide__content">
+                        <span class="slide__pill">🌿 EXCLUSIVE LIVE PLANTS</span>
+                        <h2 class="slide__title">Breathe Fresh <br><em>Air-Purifying Plants</em></h2>
+                        <p class="slide__desc">Bring calmness and natural oxygen into your bedroom, balcony, and office. NASA-recommended Snake Plants, Peace Lilies, Rubber Plants & Golden Pothos pre-potted in premium designer pots.</p>
+                        <div class="slide__actions">
+                            <a href="#shop" class="btn btn--gold btn--lg" onclick="setCategoryFilter('plants')">Explore Indoor Plants →</a>
+                            <a href="https://wa.me/919962545455?text=Hi%20Quality%20Nursery%20Garden,%20I%20want%20to%20order%20indoor%20plants" target="_blank" class="btn btn--outline-white btn--lg">Chat on WhatsApp</a>
+                        </div>
+                        <div class="slide__perks">
+                            <span>✔ 100% Root Established</span>
+                            <span>✔ Premium Designer Pots</span>
+                        </div>
+                    </div>
+                    <div class="slide__visual">
+                        <img src="https://dukaan.b-cdn.net/700x700/webp/media/12cc6828-b799-4d3a-98fb-744a2791482b.png" 
+                             alt="Good Luck Prosperity Plant Combo" 
+                             class="slide__img">
+                        <div class="slide__float-tag">
+                            <span class="slide__float-off">Top Rated</span>
+                            <span class="slide__float-sub">Good Luck Combos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Organic Fertilizers & Seeds -->
+            <div class="slide" style="background: linear-gradient(135deg, #134e4a 0%, #0f766e 60%, #14b8a6 100%);">
+                <div class="container slide__inner">
+                    <div class="slide__content">
+                        <span class="slide__pill">🌱 100% ORGANIC & SAFE</span>
+                        <h2 class="slide__title">Vermicompost, Cocopeat <br><em>& Traditional Fertilizers</em></h2>
+                        <p class="slide__desc">Pure Panchagavya, Fish Amino Acid, Rose Mix & heirloom country vegetable seeds (நாட்டு விதைகள்) for lush green growth and heavy fruiting.</p>
+                        <div class="slide__actions">
+                            <a href="#shop" class="btn btn--gold btn--lg" onclick="setCategoryFilter('fertilizer')">Explore Soil & Fertilizers →</a>
+                            <a href="#shop" class="btn btn--outline-white btn--lg" onclick="setCategoryFilter('seeds')">Country Seeds Pack</a>
+                        </div>
+                        <div class="slide__perks">
+                            <span>✔ Lab-Tested Organics</span>
+                            <span>✔ High Germination Seeds</span>
+                        </div>
+                    </div>
+                    <div class="slide__visual">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/download-and-upload/8a88f82a-7cd7-4c87-95e5-c099e033b872.jpeg" 
+                             alt="Fish Amino Acid & Panchagavya Combo" 
+                             class="slide__img">
+                        <div class="slide__float-tag">
+                            <span class="slide__float-off">Buy 1 Get 1</span>
+                            <span class="slide__float-sub">Selected Fertilizers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-arrow slider-arrow--prev" onclick="changeHeroSlide(-1)" aria-label="Previous Slide">‹</button>
+        <button class="slider-arrow slider-arrow--next" onclick="changeHeroSlide(1)" aria-label="Next Slide">›</button>
+
+        <div class="slider-dots" id="heroDots">
+            <span class="slider-dot active" onclick="goToHeroSlide(0)"></span>
+            <span class="slider-dot" onclick="goToHeroSlide(1)"></span>
+            <span class="slider-dot" onclick="goToHeroSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- ===================== CIRCULAR CATEGORIES (STORY HIGHLIGHTS) ===================== -->
+    <section class="stories-sec">
+        <div class="container">
+            <div class="stories-scroll">
+                <div class="story-item active" onclick="setCategoryFilter('all')">
+                    <div class="story-item__circle">
+                        <span class="story-item__emoji">🌿</span>
+                    </div>
+                    <span class="story-item__title">All Items</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('combo')">
+                    <div class="story-item__circle story-item__circle--hot">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/media/27247ae1-a45c-4609-b5c2-479a9745476d.png" alt="Combo Offer">
+                        <span class="story-item__badge">OFFER</span>
+                    </div>
+                    <span class="story-item__title">Combo Offer</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('plants')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/media/526534c6-9bf8-4301-bdb3-b50583b1737e.png" alt="Plants">
+                    </div>
+                    <span class="story-item__title">Live Plants</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('flowering')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/media/d1bec799-c2dd-492c-b1df-adcccd85fe16.webp" alt="Flowering Plants">
+                    </div>
+                    <span class="story-item__title">Flowering</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('herbal')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/media/3d08a24c-8c58-4f73-9a33-7f2ecde77176.png" alt="Herbal Plants">
+                    </div>
+                    <span class="story-item__title">Herbal & Tulsi</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('fertilizer')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/download-and-upload/95bdddbc-03bc-48f3-93b6-efd8625cf729.jpeg" alt="Organic Fertilizer">
+                    </div>
+                    <span class="story-item__title">Fertilizers</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('seeds')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/500x500/webp/download-and-upload/007d0d6e-beb7-4d3a-ba4e-5afe200d1e15.jpeg" alt="Seeds">
+                    </div>
+                    <span class="story-item__title">Country Seeds</span>
+                </div>
+
+                <div class="story-item" onclick="setCategoryFilter('fruit')">
+                    <div class="story-item__circle">
+                        <img src="https://dukaan.b-cdn.net/700x700/webp/media/9bfad35e-09bb-4abf-b495-b855f6e942a2.png" alt="Fruit Plants">
+                    </div>
+                    <span class="story-item__title">Fruit Plants</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== COUPONS & DISCOUNTS BAR ===================== -->
+    <section class="coupons-sec" id="coupons">
+        <div class="container">
+            <div class="coupons-grid">
+                <div class="coupon-card">
+                    <div class="coupon-card__icon">🎁</div>
+                    <div class="coupon-card__info">
+                        <strong>FLAT 10% OFF ON ALL ORDERS</strong>
+                        <p>Use code for instant checkout discount</p>
+                    </div>
+                    <button class="coupon-card__btn" onclick="copyCouponCode('QUALITY10')">
+                        <span class="coupon-card__code">QUALITY10</span>
+                        <span class="coupon-card__copy">COPY</span>
+                    </button>
+                </div>
+
+                <div class="coupon-card">
+                    <div class="coupon-card__icon">🚚</div>
+                    <div class="coupon-card__info">
+                        <strong>FREE CHENNAI DELIVERY (₹999+)</strong>
+                        <p>Direct doorstep delivery across Chennai</p>
+                    </div>
+                    <button class="coupon-card__btn" onclick="copyCouponCode('FREESHIP')">
+                        <span class="coupon-card__code">FREESHIP</span>
+                        <span class="coupon-card__copy">COPY</span>
+                    </button>
+                </div>
+
+                <div class="coupon-card">
+                    <div class="coupon-card__icon">🔥</div>
+                    <div class="coupon-card__info">
+                        <strong>20% OFF ON ALL COMBO PACKS</strong>
+                        <p>Valid on 3-pack & 5-pack live plant combos</p>
+                    </div>
+                    <button class="coupon-card__btn" onclick="copyCouponCode('COMBO20')">
+                        <span class="coupon-card__code">COMBO20</span>
+                        <span class="coupon-card__copy">COPY</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MAIN PRODUCTS CATALOG ===================== -->
+    <section class="products-sec" id="shop">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="products-sec__head">
+                <div>
+                    <span class="badge-pill">🌿 QUALITY CHENNAI NURSERY</span>
+                    <h2 class="products-sec__title">Our Quality Plants & Garden Supplies</h2>
+                    <p class="products-sec__sub" id="productCountSub">Showing all available products from our nursery</p>
+                </div>
+
+                <!-- Sort & Filter Bar -->
+                <div class="products-sec__controls">
+                    <div class="filter-pills" id="filterPills">
+                        <button class="filter-pill active" onclick="setCategoryFilter('all')">All (16+)</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('combo')">Combos</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('plants')">Live Plants</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('flowering')">Flowering</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('herbal')">Herbs</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('fertilizer')">Fertilizers</button>
+                        <button class="filter-pill" onclick="setCategoryFilter('seeds')">Seeds</button>
+                    </div>
+
+                    <div class="sort-wrap">
+                        <label for="sortDropdown">Sort by:</label>
+                        <select id="sortDropdown" class="sort-dropdown" onchange="handleSortChange(this.value)">
+                            <option value="featured">Featured / Best Sellers</option>
+                            <option value="discount">Highest Discount %</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Product Name (A-Z)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Dynamically populated by main.js with 16 exact Quality Nursery Garden items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE QUALITY NURSERY GARDEN ===================== -->
+    <section class="perks-sec">
+        <div class="container">
+            <div class="perks-grid">
+                <div class="perk-box">
+                    <div class="perk-box__icon">🚚</div>
+                    <h3>Fast Chennai Delivery</h3>
+                    <p>Same-day or next-day safe delivery across Chennai pincodes.</p>
+                </div>
+
+                <div class="perk-box">
+                    <div class="perk-box__icon">🌱</div>
+                    <h3>100% Healthy Plants</h3>
+                    <p>Root-established plants grown in our own Chennai greenhouses.</p>
+                </div>
+
+                <div class="perk-box">
+                    <div class="perk-box__icon">💰</div>
+                    <h3>Wholesale Direct Rates</h3>
+                    <p>Save up to 48% with direct nursery pricing on combo packs.</p>
+                </div>
+
+                <div class="perk-box">
+                    <div class="perk-box__icon">📞</div>
+                    <h3>Free Plant Care Help</h3>
+                    <p>Lifetime WhatsApp guidance for pest control and watering tips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PHYSICAL STORE LOCATIONS IN CHENNAI ===================== -->
+    <section class="branches-sec" id="branches">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="badge-pill">📍 VISIT OUR GREENHOUSES</span>
+                <h2>Our Chennai Nursery Branches</h2>
+                <p>Drop by our physical stores to pick up plants, grow bags, seeds, and gardening accessories in person!</p>
+            </div>
+
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-card__badge">MAIN NURSERY STORE</div>
+                    <h3>Medavakkam Branch</h3>
+                    <p class="branch-card__address">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Velachery Main Road, Medavakkam, Chennai, Tamil Nadu 600100
+                    </p>
+                    <p class="branch-card__timing">⏰ Open Daily: 7:30 AM – 8:30 PM</p>
+                    <p class="branch-card__phone">📞 Phone: +91 99625 45455</p>
+                    <a href="https://maps.google.com/?q=Quality+Nursery+Garden+Medavakkam+Chennai" target="_blank" class="btn btn--outline btn--sm">Get Google Map Directions →</a>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-card__badge">RETAIL & GREENHOUSE</div>
+                    <h3>Vengaivasal Branch</h3>
+                    <p class="branch-card__address">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Vengaivasal Main Road, Santhoshapuram, Chennai, Tamil Nadu 600073
+                    </p>
+                    <p class="branch-card__timing">⏰ Open Daily: 8:00 AM – 8:00 PM</p>
+                    <p class="branch-card__phone">📞 Phone: +91 80562 14455</p>
+                    <a href="https://maps.google.com/?q=Quality+Nursery+Garden+Vengaivasal+Chennai" target="_blank" class="btn btn--outline btn--sm">Get Google Map Directions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== VERIFIED REVIEWS ===================== -->
+    <section class="reviews-sec">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="badge-pill">⭐ 4.8 / 5 RATED</span>
+                <h2>What Chennai Plant Lovers Say</h2>
+                <p>Over 15,000+ happy plant parents trust Quality Nursery Garden for their home and balcony greenery.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">"Ordered the 3 Low Maintenance Combo & Rosemary Buy 1 Get 1. Delivered to Velachery within 24 hours in wooden-frame packaging! All plants arrived completely fresh with zero leaf damage."</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">KS</div>
+                        <div>
+                            <strong>Karthik Sundaram</strong>
+                            <span>Velachery, Chennai • Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">"The Quality Nursery Garden team delivered 20 healthy potted plants for our new home in Medavakkam. Every single plant is thriving and full of fresh leaves. Highly professional and courteous service!"</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">PR</div>
+                        <div>
+                            <strong>Priya Ramanathan</strong>
+                            <span>Medavakkam, Chennai • Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">"Best wholesale prices in Chennai for vermicompost and cocopeat blocks. Their Panchagavya and Rose Mix worked wonders on my hybrid roses. Highly recommend Quality Nursery Garden!"</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">AN</div>
+                        <div>
+                            <strong>Anand Narayanan</strong>
+                            <span>Anna Nagar, Chennai • Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION ===================== -->
+    <section class="faq-sec">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="badge-pill">❓ COMMON QUESTIONS</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our live plant delivery, care tips, and nursery services.</p>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>How are live plants safely packaged for delivery in Chennai?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>All our live plants are packed in specialized ventilated, sturdy corrugated boxes with custom protective frames and moisture-retaining coco-fiber covers over the root ball. This ensures zero soil spillage and keeps the foliage upright and fresh during transit.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Do you offer doorstep delivery across all Chennai areas?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes! We deliver across all Chennai pin codes (including Medavakkam, Velachery, OMR, Tambaram, Anna Nagar, Adyar, and Porur). Orders above ₹999 qualify for Free Home Delivery.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What is your 100% plant replacement guarantee?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>We provide a 100% Healthy Plant Guarantee. In the rare event that a plant arrives damaged or unhealthy, simply send us a photo on WhatsApp (+91 99625 45455) within 48 hours of delivery, and we will dispatch a free replacement or provide store credit immediately.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How often should I water my indoor & outdoor plants in Chennai?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>For outdoor plants, water daily in the early morning or evening during Chennai summers. For indoor plants (like Snake Plant, Money Plant, and Peace Lily), check that the top 1-2 inches of soil are dry before watering (usually once every 5 to 7 days). Overwatering is the most common mistake!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__brand">
+                    <div class="logo">
+                        <div class="logo__info">
+                            <span class="logo__name" style="color:#fff;">Quality Nursery Garden</span>
+                            <span class="logo__tagline" style="color:var(--green-300);">BEST GARDEN SHOP IN CHENNAI</span>
+                        </div>
+                    </div>
+                    <p class="footer__bio">Quality Nursery Garden is Chennai's top-rated destination for live indoor & flowering plants, HDPE grow bags, organic fertilizers, seeds, and gardening supplies.</p>
+                    
+                    <div class="footer__contact-items">
+                        <p>📍 Velachery Main Rd, Medavakkam, Chennai 600100</p>
+                        <p>📞 Phone: +91 99625 45455 / +91 80562 14455</p>
+                        <p>✉️ Email: support@qualitynursery.com</p>
+                    </div>
+
+                    <div class="footer__socials">
+                        <a href="https://wa.me/919962545455" target="_blank" aria-label="WhatsApp" class="footer__social-btn">💬</a>
+                        <a href="#" target="_blank" aria-label="YouTube" class="footer__social-btn">▶</a>
+                        <a href="#" target="_blank" aria-label="Instagram" class="footer__social-btn">📷</a>
+                        <a href="#" target="_blank" aria-label="Facebook" class="footer__social-btn">f</a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Top Categories</h4>
+                    <ul>
+                        <li><a href="#shop" onclick="setCategoryFilter('combo')">Super Saver Combos</a></li>
+                        <li><a href="#shop" onclick="setCategoryFilter('plants')">Live Air Purifying Plants</a></li>
+                        <li><a href="#shop" onclick="setCategoryFilter('flowering')">Flowering & Jasmine Plants</a></li>
+                        <li><a href="#shop" onclick="setCategoryFilter('herbal')">Traditional Herbal Plants</a></li>
+                        <li><a href="#shop" onclick="setCategoryFilter('fertilizer')">Vermicompost & Panchagavya</a></li>
+                        <li><a href="#shop" onclick="setCategoryFilter('seeds')">Country Vegetable Seeds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#branches">Store Locations & Timings</a></li>
+                        <li><a href="#coupons">Active Coupons & Offers</a></li>
+                        <li><a href="#" onclick="openPincodeModal()">Check Delivery Pincodes</a></li>
+                        <li><a href="https://wa.me/919962545455" target="_blank">Plant Care Advice on WhatsApp</a></li>
+                        <li><a href="#">Shipping & Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Payment Methods & Delivery</h4>
+                    <p class="footer__subtext">Safe & secure checkout with doorstep plant delivery across Chennai and Tamil Nadu.</p>
+                    <div class="payment-icons">
+                        <span class="pay-tag">UPI</span>
+                        <span class="pay-tag">GPay</span>
+                        <span class="pay-tag">PhonePe</span>
+                        <span class="pay-tag">Paytm</span>
+                        <span class="pay-tag">Net Banking</span>
+                        <span class="pay-tag">COD Available</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Quality Nursery Garden. All Rights Reserved. Crafted for Quality Plant Lovers in Chennai 🌿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== CATEGORY SIDEBAR DRAWER ===================== -->
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleCategoryDrawer()"></div>
+    <aside class="menu-drawer" id="menuDrawer" aria-label="Category Menu">
+        <div class="menu-drawer__head">
+            <div class="logo">
+                <div class="logo__info">
+                    <span class="logo__name">Quality Nursery</span>
+                    <span class="logo__tagline">ALL CATEGORIES</span>
+                </div>
+            </div>
+            <button class="menu-drawer__close" onclick="toggleCategoryDrawer()" aria-label="Close menu">✕</button>
+        </div>
+
+        <div class="menu-drawer__list">
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('all'); toggleCategoryDrawer();">
+                <span>🌿 All Nursery Products</span>
+                <span class="menu-drawer__count">16</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item menu-drawer__item--hot" onclick="setCategoryFilter('combo'); toggleCategoryDrawer();">
+                <span>🔥 Super Saver Combos</span>
+                <span class="menu-drawer__badge">UP TO 48% OFF</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('plants'); toggleCategoryDrawer();">
+                <span>🪴 Live Air Purifying Plants</span>
+                <span class="menu-drawer__count">5</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('flowering'); toggleCategoryDrawer();">
+                <span>🌸 Flowering & Jasmine Plants</span>
+                <span class="menu-drawer__count">3</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('herbal'); toggleCategoryDrawer();">
+                <span>🍃 Medicinal Herbs & Tulsi</span>
+                <span class="menu-drawer__count">3</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('fertilizer'); toggleCategoryDrawer();">
+                <span>🪱 Vermicompost & Fertilizers</span>
+                <span class="menu-drawer__count">2</span>
+            </a>
+            <a href="#shop" class="menu-drawer__item" onclick="setCategoryFilter('seeds'); toggleCategoryDrawer();">
+                <span>🌱 Country Vegetable Seeds</span>
+                <span class="menu-drawer__count">1</span>
+            </a>
+            <a href="#branches" class="menu-drawer__item" onclick="toggleCategoryDrawer();">
+                <span>📍 Our Chennai Store Branches</span>
+            </a>
+        </div>
+
+        <div class="menu-drawer__foot">
+            <a href="https://wa.me/919962545455" target="_blank" class="btn btn--wa btn--full">
+                💬 Chat with Nursery Expert
+            </a>
+        </div>
+    </aside>
+
+    <!-- ===================== WISHLIST MODAL ===================== -->
+    <div class="modal-overlay" id="wishlistOverlay" onclick="closeWishlistModal()"></div>
+    <div class="wishlist-modal" id="wishlistModal">
+        <div class="wishlist-modal__head">
+            <h3>❤️ My Saved Plants (<span id="wishlistCountHead">0</span>)</h3>
+            <button class="quick-modal__close" onclick="closeWishlistModal()">✕</button>
+        </div>
+        <div class="wishlist-modal__body" id="wishlistItemsList">
+            <!-- Populated dynamically -->
+        </div>
+    </div>
+
+    <!-- ===================== SLIDE-OUT CART DRAWER ===================== -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCartDrawer()"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+        <div class="cart-drawer__head">
+            <div class="cart-drawer__title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <h3>Your Cart (<span id="cartDrawerCount">0</span>)</h3>
+            </div>
+            <button class="cart-drawer__close" onclick="toggleCartDrawer()" aria-label="Close cart">✕</button>
+        </div>
+
+        <!-- Free Delivery Progress Tracker -->
+        <div class="shipping-meter">
+            <div class="shipping-meter__text" id="shippingMeterText">
+                Add <strong>₹999</strong> more for <strong>FREE Delivery in Chennai</strong>!
+            </div>
+            <div class="shipping-meter__bar">
+                <div class="shipping-meter__fill" id="shippingMeterFill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items Container -->
+        <div class="cart-drawer__items" id="cartDrawerItems">
+            <!-- Dynamically populated -->
+        </div>
+
+        <!-- Empty Cart Notice -->
+        <div class="cart-drawer__empty" id="cartDrawerEmpty">
+            <span class="empty-icon">🪴</span>
+            <h4>Your nursery cart is empty</h4>
+            <p>Browse our live plants, combos and seeds to add them to your garden!</p>
+            <button class="btn btn--primary" onclick="toggleCartDrawer()">Start Shopping</button>
+        </div>
+
+        <!-- Cart Footer Checkout -->
+        <div class="cart-drawer__foot" id="cartDrawerFoot" style="display:none;">
+            <!-- Coupon Input Box -->
+            <div class="cart-coupon">
+                <input type="text" id="cartCouponInput" placeholder="Enter coupon (e.g. QUALITY10)">
+                <button onclick="applyCartCoupon()">Apply</button>
+            </div>
+            <div class="cart-coupon__msg" id="cartCouponMsg"></div>
+
+            <!-- Price Breakdown -->
+            <div class="cart-summary">
+                <div class="cart-summary__row">
+                    <span>Items Subtotal</span>
+                    <strong id="cartSummarySubtotal">₹0</strong>
+                </div>
+                <div class="cart-summary__row" id="cartDiscountRow" style="display:none; color: #16a34a;">
+                    <span>Coupon Discount</span>
+                    <strong id="cartSummaryDiscount">-₹0</strong>
+                </div>
+                <div class="cart-summary__row">
+                    <span>Delivery Charges (Chennai)</span>
+                    <strong id="cartSummaryDelivery">₹70</strong>
+                </div>
+                <div class="cart-summary__total">
+                    <span>Grand Total</span>
+                    <strong id="cartSummaryGrand">₹0</strong>
+                </div>
+            </div>
+
+            <!-- Checkout Buttons -->
+            <div class="cart-drawer__actions">
+                <button class="btn btn--primary btn--full btn--lg" onclick="handleCheckoutStandard()">
+                    Proceed to Checkout
+                </button>
+                <button class="btn btn--wa btn--full" onclick="handleCheckoutWhatsApp()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Direct Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ===================== QUICK VIEW MODAL ===================== -->
+    <div class="modal-overlay" id="quickModalOverlay" onclick="closeQuickModal()"></div>
+    <div class="quick-modal" id="quickModal">
+        <button class="quick-modal__close" onclick="closeQuickModal()" aria-label="Close dialog">✕</button>
+        <div class="quick-modal__grid">
+            <div class="quick-modal__img-wrap">
+                <img id="quickModalImg" src="" alt="Product Quick View">
+                <span class="quick-modal__badge" id="quickModalBadge"></span>
+            </div>
+            <div class="quick-modal__content">
+                <span class="quick-modal__cat" id="quickModalCat">Category</span>
+                <h2 class="quick-modal__name" id="quickModalName">Plant Name</h2>
+                <div class="quick-modal__stars" id="quickModalStars">★★★★★ <span>(4.8 / 5.0)</span></div>
+                
+                <div class="quick-modal__pricing">
+                    <span class="quick-modal__price" id="quickModalPrice">₹0</span>
+                    <span class="quick-modal__orig" id="quickModalOrig">₹0</span>
+                    <span class="quick-modal__discount" id="quickModalDiscount"></span>
+                </div>
+
+                <p class="quick-modal__desc" id="quickModalDesc">Description text goes here.</p>
+
+                <!-- Spec Grid -->
+                <div class="quick-modal__specs">
+                    <div class="spec-pill">
+                        <span>☀️ Light</span>
+                        <strong id="quickModalLight">Full Sun</strong>
+                    </div>
+                    <div class="spec-pill">
+                        <span>💧 Water</span>
+                        <strong id="quickModalWater">Every 2-3 Days</strong>
+                    </div>
+                    <div class="spec-pill">
+                        <span>🪴 Pot Type</span>
+                        <strong id="quickModalPot">Nursery / Fancy Pot</strong>
+                    </div>
+                    <div class="spec-pill">
+                        <span>🌱 Difficulty</span>
+                        <strong id="quickModalDifficulty">Easy to Grow</strong>
+                    </div>
+                </div>
+
+                <div class="quick-modal__actions">
+                    <div class="modal-qty-stepper">
+                        <button onclick="changeModalQty(-1)">−</button>
+                        <span id="quickModalQty">1</span>
+                        <button onclick="changeModalQty(1)">+</button>
+                    </div>
+                    <button class="btn btn--primary btn--lg flex-1" id="quickModalAddBtn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== PINCODE CHECKER MODAL ===================== -->
+    <div class="modal-overlay" id="pincodeModalOverlay" onclick="closePincodeModal()"></div>
+    <div class="pincode-modal" id="pincodeModal">
+        <button class="quick-modal__close" onclick="closePincodeModal()">✕</button>
+        <div class="pincode-modal__content">
+            <div class="pincode-modal__icon">📍</div>
+            <h3>Check Delivery in Your Area</h3>
+            <p>Enter your 6-digit Indian pincode to confirm doorstep live plant delivery.</p>
+            <div class="pincode-form">
+                <input type="text" id="pincodeInput" placeholder="e.g. 600100" maxlength="6">
+                <button class="btn btn--primary" onclick="verifyPincode()">Check</button>
+            </div>
+            <div class="pincode-result" id="pincodeResult"></div>
+            <div class="pincode-quick">
+                <span>Popular Chennai Areas:</span>
+                <button onclick="selectQuickPincode('600100', 'Medavakkam')">Medavakkam (600100)</button>
+                <button onclick="selectQuickPincode('600042', 'Velachery')">Velachery (600042)</button>
+                <button onclick="selectQuickPincode('600096', 'Perungudi / OMR')">OMR (600096)</button>
+                <button onclick="selectQuickPincode('600040', 'Anna Nagar')">Anna Nagar (600040)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== CHECKOUT MODAL ===================== -->
+    <div class="modal-overlay" id="checkoutOverlay" onclick="closeCheckoutModal()"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <button class="quick-modal__close" onclick="closeCheckoutModal()" aria-label="Close checkout">✕</button>
+        
+        <!-- Checkout Form Screen -->
+        <div id="checkoutFormScreen" class="checkout-modal__body">
+            <div class="checkout-modal__head">
+                <span class="badge-pill">🔒 SECURE CHECKOUT</span>
+                <h3>Complete Your Plant Order</h3>
+                <p>Doorstep delivery across Chennai with 100% live plant health guarantee.</p>
+            </div>
+
+            <form class="checkout-form" id="checkoutOrderForm" onsubmit="handlePlaceOrder(event)">
+                <div class="checkout-form__grid">
+                    <div class="form-group">
+                        <label for="orderName">Full Name *</label>
+                        <input type="text" id="orderName" placeholder="e.g. Anand Sundaram" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderPhone">10-Digit Mobile / WhatsApp *</label>
+                        <input type="tel" id="orderPhone" placeholder="e.g. 9840123456" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <label for="orderAddress">Door No, Flat & Street Address *</label>
+                        <input type="text" id="orderAddress" placeholder="e.g. Flat 3B, Green Palms Apt, Gandhi Road" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderArea">Area / Landmark *</label>
+                        <input type="text" id="orderArea" placeholder="e.g. Medavakkam / Velachery" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderPincode">Chennai Pincode *</label>
+                        <input type="text" id="orderPincode" placeholder="e.g. 600100" pattern="[0-9]{6}" maxlength="6" required>
+                    </div>
+                </div>
+
+                <!-- Payment Method Selection -->
+                <div class="payment-selection">
+                    <label class="payment-label">Select Payment Method:</label>
+                    <div class="payment-options">
+                        <label class="pay-option active">
+                            <input type="radio" name="payMethod" value="Cash on Delivery (COD)" checked>
+                            <span class="pay-option__icon">💵</span>
+                            <div class="pay-option__info">
+                                <strong>Cash on Delivery (COD)</strong>
+                                <span>Pay when plants arrive at your door</span>
+                            </div>
+                        </label>
+
+                        <label class="pay-option">
+                            <input type="radio" name="payMethod" value="UPI / GPay / PhonePe">
+                            <span class="pay-option__icon">📱</span>
+                            <div class="pay-option__info">
+                                <strong>UPI / GPay / PhonePe</strong>
+                                <span>Instant scan & pay via any UPI app</span>
+                            </div>
+                        </label>
+
+                        <label class="pay-option">
+                            <input type="radio" name="payMethod" value="Credit / Debit Card">
+                            <span class="pay-option__icon">💳</span>
+                            <div class="pay-option__info">
+                                <strong>Card / NetBanking</strong>
+                                <span>Visa, MasterCard, Rupay & NetBanking</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Summary Strip -->
+                <div class="checkout-summary-strip">
+                    <div>
+                        <span style="font-size: 0.85rem; color: var(--gray-500); display: block;">Total Payable:</span>
+                        <strong id="checkoutPayableTotal" style="font-size: 1.4rem; color: var(--brand-green);">₹0</strong>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg">
+                        Confirm & Place Order
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Screen -->
+        <div id="checkoutSuccessScreen" class="checkout-modal__success" style="display:none;">
+            <div class="success-icon">🎉</div>
+            <span class="badge-pill">ORDER CONFIRMED</span>
+            <h2>Thank You for Your Order!</h2>
+            <p class="success-subtitle">Your plants are being prepared at our Medavakkam greenhouse for safe delivery.</p>
+
+            <div class="order-receipt-card">
+                <div class="receipt-row">
+                    <span>Order Reference:</span>
+                    <strong id="receiptOrderId">QNG-2026-7842</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Customer Name:</span>
+                    <strong id="receiptName">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Delivery Location:</span>
+                    <strong id="receiptAddress">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Payment Method:</span>
+                    <strong id="receiptPayment">-</strong>
+                </div>
+                <div class="receipt-row receipt-row--total">
+                    <span>Total Amount:</span>
+                    <strong id="receiptTotal">-</strong>
+                </div>
+            </div>
+
+            <div class="success-actions">
+                <button class="btn btn--primary" onclick="closeCheckoutModal()">Continue Shopping</button>
+                <a id="receiptWhatsAppBtn" href="#" target="_blank" class="btn btn--wa">
+                    Track on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== MOBILE BOTTOM APP NAVIGATION ===================== -->
+    <nav class="mobile-bottom-bar" aria-label="Mobile Navigation">
+        <a href="#hero" class="mobile-nav-link active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Home</span>
+        </a>
+        <button class="mobile-nav-link" onclick="toggleCategoryDrawer()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <span>Categories</span>
+        </button>
+        <a href="#shop" class="mobile-nav-link" onclick="document.getElementById('searchInput').focus();">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span>Search</span>
+        </a>
+        <button class="mobile-nav-link" onclick="openWishlistModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Wishlist</span>
+        </button>
+        <button class="mobile-nav-link" onclick="toggleCartDrawer()">
+            <div style="position:relative; display:inline-block;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span class="mobile-cart-badge" id="mobileCartBadge">0</span>
+            </div>
+            <span>Cart</span>
+        </button>
+    </nav>
+
+    <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
+    <a href="https://wa.me/919962545455?text=Hi%20Quality%20Nursery%20Garden,%20I%20have%20a%20question%20about%20your%20nursery%20plants" 
+       target="_blank" 
+       class="floating-wa" 
+       title="Chat with Quality Nursery Garden on WhatsApp">
+        <div class="floating-wa__pulse"></div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span class="floating-wa__label">Order on WhatsApp</span>
+    </a>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-host" id="toastHost"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
