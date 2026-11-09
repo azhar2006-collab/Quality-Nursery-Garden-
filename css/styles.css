@@ -653,22 +653,6 @@ input, select, textarea {
     flex-shrink: 0;
 }
 
-.slide--banner {
-    background-image: linear-gradient(90deg, rgba(3, 35, 18, 0.92) 0%, rgba(4, 43, 22, 0.78) 42%, rgba(4, 43, 22, 0.2) 100%),
-        url("https://images.unsplash.com/photo-1775681150283-04970adf1b98?auto=format&fit=crop&fm=jpg&q=85&w=2400");
-    background-position: center;
-    background-size: cover;
-}
-
-.slide--banner .slide__inner {
-    grid-template-columns: minmax(0, 1fr);
-    min-height: clamp(460px, 44vw, 600px);
-}
-
-.slide--banner .slide__content {
-    max-width: 760px;
-}
-
 .slide__inner {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -2491,29 +2475,26 @@ input, select, textarea {
 
 @media (max-width: 768px) {
     .menu-btn { display: flex; }
-    .cat-nav__list { display: none; }
     .header__inner {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
         padding: 10px max(16px, env(safe-area-inset-left, 0px)) 10px max(16px, env(safe-area-inset-right, 0px));
         gap: 8px 10px;
     }
     .logo {
-        order: 1;
-        flex: 1;
+        min-width: 0;
     }
     .logo__name {
-        font-size: 1.22rem;
+        font-size: clamp(0.9rem, 4.3vw, 1.15rem);
     }
     .header__actions {
-        order: 2;
-        gap: 8px;
+        gap: 6px;
     }
     .search-box {
-        order: 3;
+        grid-column: 1 / -1;
         width: 100%;
         max-width: 100%;
-        margin-top: 2px;
-        flex-basis: 100%;
+        margin: 0;
     }
     .search-box__input {
         padding: 9px 36px 9px 38px;
@@ -2556,8 +2537,9 @@ input, select, textarea {
     .slide__perks { flex-direction: column; gap: 6px; font-size: 0.78rem; }
     .slide__visual { width: min(100%, 320px); }
     .slide__img { width: 100%; aspect-ratio: 1.18; border-width: 4px; border-radius: 18px; }
-    .slide--banner { background-position: 62% center; }
-    .slide--banner .slide__inner { min-height: 470px; }
+    .cat-nav__inner { gap: 8px; touch-action: pan-x; }
+    .cat-nav__all-btn { gap: 6px; padding: 9px 12px; font-size: 0.78rem; }
+    .cat-nav__link { padding: 11px 10px; font-size: 0.8rem; }
     .slider-dots { bottom: 8px; }
     .mobile-bottom-bar {
         display: flex;
@@ -2579,7 +2561,6 @@ input, select, textarea {
     .cart-trigger { min-height: 42px; padding: 8px 10px; }
     .menu-btn { width: 38px; height: 38px; }
     .slide { padding: 26px 0 28px; }
-    .slide--banner .slide__inner { min-height: 500px; }
     .slide__title { font-size: clamp(1.55rem, 7.5vw, 1.85rem); }
     .slide__pill { font-size: 0.64rem; letter-spacing: 1px; padding: 6px 10px; }
     .slide__desc { line-height: 1.55; }
