@@ -330,6 +330,14 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initPincodeStorage();
 
+    // Payment method radio selection highlight
+    document.querySelectorAll('input[name="payMethod"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            document.querySelectorAll('.pay-option').forEach(opt => opt.classList.remove('active'));
+            e.target.closest('.pay-option').classList.add('active');
+        });
+    });
+
     // Search input listener
     searchInput.addEventListener('input', (e) => {
         searchQuery = e.target.value.trim().toLowerCase();
@@ -1027,6 +1035,25 @@ function initHeroSlider() {
     if (slider) {
         slider.addEventListener('mouseenter', () => clearInterval(heroTimer));
         slider.addEventListener('mouseleave', () => startHeroTimer());
+
+        // Mobile touch swipe gestures
+        let touchStartX = 0;
+        let touchEndX = 0;
+        slider.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        slider.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 45) {
+                if (diff > 0) {
+                    changeHeroSlide(1); // Swipe left -> next slide
+                } else {
+                    changeHeroSlide(-1); // Swipe right -> prev slide
+                }
+            }
+        }, { passive: true });
     }
 }
 
